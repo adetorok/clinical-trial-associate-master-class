@@ -24,6 +24,9 @@
             margin: 0;
             font-size: 2.5em;
         }
+        header p {
+            font-size: 1.2em;
+        }
         nav {
             display: flex;
             justify-content: center;
@@ -58,6 +61,12 @@
         section h2 {
             color: #007bff;
             margin-bottom: 1em;
+        }
+        section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
         }
         footer {
             text-align: center;
@@ -182,11 +191,102 @@
     </nav>
     <section id="about">
         <h2>About the Master Class</h2>
+        <img src="https://via.placeholder.com/800x400" alt="About the Master Class">
         <p>This is a comprehensive 4-week Clinical Trial Associate Master Class designed for individuals aspiring to excel in the clinical research field. The class is held Monday to Thursday, from 6pm to 9pm, with an additional one-day in-person internship.</p>
     </section>
     <section id="schedule">
         <h2>Class Schedule</h2>
+        <img src="https://via.placeholder.com/800x400" alt="Class Schedule">
         <p>The class runs from Monday to Thursday, 6pm to 9pm, over a 4-week period. The in-person internship will be scheduled separately.</p>
     </section>
     <section id="pricing">
-        <h2
+        <h2>Pricing</h2>
+        <img src="https://via.placeholder.com/800x400" alt="Pricing">
+        <p>The cost for the Master Class is $2500, and the in-person internship is also $2500. A $500 deposit is required to start. However, a $1000 deposit will include a free resume development service and a 30-day assisted application process where we apply for 5 to 10 jobs per day for you with the resume we created and an email you provide.</p>
+    </section>
+    <section id="testimonials">
+        <h2>Testimonials and Facts</h2>
+        <div class="testimonial">
+            <p>"Becoming a Clinical Research Associate has been a transformative experience for me. The opportunity to work on groundbreaking clinical trials and contribute to the development of new treatments is incredibly rewarding. Every day brings new challenges and learning experiences, and the sense of accomplishment I feel knowing that my work helps improve patient care is unparalleled." - Sarah J.</p>
+            <p>"As a CRA, I've had the chance to travel extensively and collaborate with top professionals in the healthcare and pharmaceutical industries. The role offers a perfect blend of office-based tasks and fieldwork, allowing me to develop a diverse skill set. The salary and benefits are also highly competitive, making it a fulfilling and financially stable career choice." - Michael R.</p>
+            <p>"Working as a Clinical Research Associate has given me a deep sense of purpose. The ability to be at the forefront of medical research and contribute to the advancement of science is incredibly fulfilling. The job is dynamic and keeps me constantly engaged, and the professional growth opportunities are immense. I wouldn't trade this career for anything else." - Emily T.</p>
+        </div>
+        <div class="facts">
+            <h3>Facts About the Life of a Clinical Research Associate</h3>
+            <p><strong>Impactful Work:</strong> CRAs play a crucial role in the development of new drugs and therapies, directly contributing to advancements in medical science and patient care.</p>
+            <p><strong>Career Growth:</strong> The demand for CRAs is steadily increasing, providing numerous opportunities for career advancement and specialization within the clinical research field.</p>
+            <p><strong>Travel Opportunities:</strong> Many CRAs enjoy the opportunity to travel, as they often visit clinical trial sites, work with diverse teams, and experience different cultures.</p>
+            <p><strong>Competitive Salary:</strong> CRAs typically earn a competitive salary, with additional benefits such as bonuses, health insurance, and retirement plans.</p>
+        </div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+    <section id="contact">
+        <h2>Contact Information</h2>
+        <ul class="contact-info">
+            <li>Instructor: Yeni Adetoro</li>
+            <li>Phone: 973-355-50530</li>
+            <li>Email: <a href="mailto:Clinicaltriallectures@gmail.com">Clinicaltriallectures@gmail.com</a></li>
+        </ul>
+    </section>
+    <section id="payment">
+        <h2>Payment Options</h2>
+        <div class="payment-option">
+            <div>
+                <h3>$500 Deposit</h3>
+                <p>Includes enrollment in the class only.</p>
+                <!-- PayPal Button for $500 Deposit -->
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="YOUR_BUTTON_ID_FOR_500">
+                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" class="paypal-button">
+                    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                </form>
+            </div>
+            <div>
+                <h3>$1000 Deposit</h3>
+                <p>Includes enrollment in the class, resume development, and 30-day assisted application process.</p>
+                <!-- PayPal Button for $1000 Deposit -->
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="YOUR_BUTTON_ID_FOR_1000">
+                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" class="paypal-button">
+                    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Clinical Trial Associate Master Class. All rights reserved.</p>
+    </footer>
+
+    <!-- Chat Modal -->
+    <div class="chat-modal" id="chatModal">
+        <div class="chat-modal-content">
+            <button class="close" onclick="closeChatModal()">&times;</button>
+            <h3>Join Our Live Chat</h3>
+            <p>Enter your details to talk to an instructor</p>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <button type="submit">Join Chat</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Show chat modal after 90 seconds
+        setTimeout(function() {
+            document.getElementById('chatModal').style.display = 'block';
+        }, 90000);
+
+        // Close chat modal
+        function closeChatModal() {
+            document.getElementById('chatModal').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
